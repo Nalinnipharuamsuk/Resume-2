@@ -11,7 +11,7 @@ export default function Page() {
             src="/images/profile3.jpg" 
             alt="Profile3" 
             style={{ borderRadius: "50%", width: "150px", height: "150px", objectFit: "cover", marginBottom: "10px" }}
-            className="rounded-full"
+            
           />
 
           <h2 style={{ borderBottom: "2px solid #6c9ab3", paddingBottom: "5px", color: "#333" }}>Profile</h2>
@@ -53,7 +53,17 @@ export default function Page() {
         </section>
       </main>
 
-      <footer style={{ textAlign: "center", padding: "10px", backgroundColor: "#f1f1f1", marginTop: "20px", borderRadius: "0 0 8px 8px" }}>
+      <footer
+        style={{
+          textAlign: "center",
+          padding: "20px",
+          backgroundColor: "#6c9ab3",
+          color: "white",
+          borderTop: "6px solid #f9f9f9", // ขอบด้านบนฟุตเตอร์
+          borderRadius: "0 0 8px 8px",
+          backgroundImage: "linear-gradient(45deg, #6c9ab3)", // พื้นหลังแบบเก๋ๆ
+        }}
+      >
         <p style={{ margin: "0", fontSize: "14px", color: "#555" }}>© 2024 Nalinnipha Ruamsuk</p>
       </footer>
     </div>

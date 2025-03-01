@@ -1,24 +1,61 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f3;
+  margin: 0;
+  font-family: "Arial, sans-serif";
 }
+
+h1, h2 {
+  font-weight: bold;
+}
+
+ul li {
+  color: #333;
+}
+
+
+.card {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card h2::before {
+  content: '⭐';
+  margin-right: 10px;
+  color: #ff9800;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin: 5px 0;
+  color: #555;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
